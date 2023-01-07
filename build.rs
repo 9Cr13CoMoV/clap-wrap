@@ -8,7 +8,7 @@ fn main() {
         ::new()        
         .include(Path::new("C:/projects/RUST/clap-wrap/clap-main/include/clap"))
         .includes(Path::new("C:/projects/RUST/clap-wrap/clap-main/src"))
-        .compile("clapc");
+        .try_compile("clapc");
 
     let bindings = 
         bindgen::Builder
